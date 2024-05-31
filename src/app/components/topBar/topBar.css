@@ -36,6 +36,11 @@ Top Bar
   padding-left: 10px;
 }
 
+/* потом удалить и проверить */
+#topbar .languages ul li + li a {
+  color: #fff;
+}
+
 #topbar .languages ul li + li::before {
   display: inline-block;
   padding-right: 10px;
