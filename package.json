@@ -1,0 +1,29 @@
+{
+  "name": "restaurant_dstudio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "boxicons": "^2.1.4",
+    "glightbox": "^3.3.0",
+    "next": "14.2.3",
+    "prettier": "^3.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "swiper": "^11.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}
