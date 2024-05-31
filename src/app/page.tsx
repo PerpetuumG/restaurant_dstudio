@@ -1,5 +1,5 @@
+import TopBar from '@/app/components/TopBar';
+
 export default function Home() {
-  return (
-<h1>emkenr</h1>
-  );
+  return <div>hello world</div>;
 }
