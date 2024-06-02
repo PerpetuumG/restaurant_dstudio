@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={playfair.className}>
         <TopBar />
-        <Header/>
+        <Header />
         {children}
       </body>
       <script

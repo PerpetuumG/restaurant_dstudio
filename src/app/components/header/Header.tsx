@@ -37,9 +37,9 @@ const Header = () => {
           <img src='assets/img/logo.png' alt='' className={'img-fluid'} />
         </a>*/}
 
-        <Nav/>
+        <Nav />
 
-        <AppBtn name={'book a table'}/>
+        <AppBtn name={'book a table'} />
       </div>
     </header>
   );
