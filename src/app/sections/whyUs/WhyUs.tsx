@@ -14,7 +14,7 @@ const WhyUs = async () => {
   return (
     <section id={'why-us'} className={'why-us'}>
       <div className={'container'}>
-        <SectionTitle title={'Why us'} subtitle={'Why choose us'} />
+        <SectionTitle title={'Why us'} subtitle={'Why choose our restaurant'} />
 
         <div className={'row'}>
           {items &&
