@@ -26,7 +26,22 @@ const Menu = () => {
     setItems(data);
   }, [data]);
 
-  const handleFilterChange = (id: number, category: string) => {};
+  const handleFilterActive = (id: number) => {
+    filters.map(filter => {
+      filter.active = false;
+      if (filter.id === id) filter.active = true;
+    });
+  };
+
+  const handleFilterChange = (id: number, category: string) => {
+    handleFilterActive(id);
+
+    if (category === 'all') {
+      setItems(data);
+    } else {
+      setItems(data.filter((item: { category: string }) => item.category === category));
+    }
+  };
 
   return (
     <section id={'menu'} className={'menu section-bg'}>
