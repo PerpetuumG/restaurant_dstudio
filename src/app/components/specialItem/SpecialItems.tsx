@@ -1,7 +1,7 @@
 import React from 'react';
-import './specialItem.css';
+import './specialItems.css';
 
-const SpecialItem = ({
+const SpecialItems = ({
   item,
 }: {
   item: {
@@ -33,4 +33,4 @@ const SpecialItem = ({
   );
 };
 
-export default SpecialItem;
+export default SpecialItems;
