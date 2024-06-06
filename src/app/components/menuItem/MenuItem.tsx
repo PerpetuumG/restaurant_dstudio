@@ -18,7 +18,7 @@ const MenuItem = ({
       <img src={item.preview} className={'menu-img'} alt='' />
 
       <div className={'menu-content'}>
-        <Link href={`/menu/${item.id}}`}>{item.name}</Link>
+        <Link href={`/menu/${item.id}`}>{item.name}</Link>
         <span>${item.price}</span>
       </div>
 
