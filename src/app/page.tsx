@@ -5,6 +5,7 @@ import Menu from '@/app/sections/menu/Menu';
 import Specials from '@/app/sections/specials/Specials';
 import Events from '@/app/sections/events/Events';
 import Booking from '@/app/sections/booking/Booking';
+import Testimonials from '@/app/sections/testimonials/Testimonials';
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
         <WhyUs />
         <Menu />
         <Specials />
-        <Events/>
-        <Booking/>
+        <Events />
+        <Booking />
+        <Testimonials />
       </main>
     </>
   );
