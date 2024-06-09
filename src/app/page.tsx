@@ -8,6 +8,7 @@ import Booking from '@/app/sections/booking/Booking';
 import Testimonials from '@/app/sections/testimonials/Testimonials';
 import Gallery from '@/app/sections/gallery/Gallery';
 import Chefs from '@/app/sections/chefs/Chefs';
+import Contact from '@/app/sections/contact/Contact';
 
 export default function Home() {
   return (
@@ -22,7 +23,8 @@ export default function Home() {
         <Booking />
         <Testimonials />
         <Gallery />
-        <Chefs/>
+        <Chefs />
+        <Contact />
       </main>
     </>
   );
