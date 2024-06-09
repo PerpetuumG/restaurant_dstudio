@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { navs } from '../../data/data';
 import './nav.css';
 
 const Nav = () => {
+  const pathname = usePathname();
+  const router = useRouter();
+
   const [navList, setNavList] = useState(navs);
   const [open, setOpen] = useState<boolean>(false);
   const [scroll, setScroll] = useState<number>(0);
@@ -24,10 +28,46 @@ const Nav = () => {
   };
 
   // прокрутка к разделу автоматически
-  const handleScrollTo = (section: string) => {};
+  const handleScrollTo = (section: string) => {
+    let header: HTMLElement = document.querySelector('#header')!;
+    let offset = header.offsetHeight;
+    let targetEl: HTMLElement = document.querySelector('#' + section)!;
+    if (pathname === '/') {
+      let elementPosition = targetEl.offsetTop;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
+    } else {
+      router.push(`/#${section}`);
+    }
+  };
 
   // прокрутка к разделу вручную
-  const handleNavActive = () => {};
+  const handleNavActive = () => {
+    let position = scroll + 200;
+
+    // nav add and remove class active
+    setNavList(
+      navList.map(nav => {
+        nav.active = false;
+        let targetSection: HTMLElement = document.querySelector('#' + nav.target)!;
+
+        if (
+          targetSection &&
+          position >= targetSection.offsetTop &&
+          position <= targetSection.offsetTop + targetSection.offsetHeight
+        ) {
+          nav.active = true;
+        }
+        return nav;
+      }),
+    );
+  };
+
+  useEffect(() => {
+    handleNavActive();
+  }, [scroll]);
 
   return (
     <nav

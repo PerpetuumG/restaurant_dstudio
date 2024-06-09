@@ -411,14 +411,14 @@ export const navs = [
   },
   {
     id: 6,
-    name: 'Chefs',
-    target: 'chefs',
+    name: 'Gallery',
+    target: 'gallery',
     active: false,
   },
   {
     id: 7,
-    name: 'Gallery',
-    target: 'gallery',
+    name: 'Chefs',
+    target: 'chefs',
     active: false,
   },
   {
