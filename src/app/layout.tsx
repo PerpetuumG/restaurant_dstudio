@@ -16,6 +16,7 @@ import './globals.css';
 import TopBar from '@/app/components/topBar/TopBar';
 import Header from '@/app/components/header/Header';
 import BackToTopBtn from '@/app/components/backToTopBtn/BackToTopBtn';
+import Footer from '@/app/sections/footer/Footer';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -40,6 +41,7 @@ export default function RootLayout({
         <TopBar />
         <Header />
         {children}
+        <Footer />
         <BackToTopBtn />
       </body>
       <script
